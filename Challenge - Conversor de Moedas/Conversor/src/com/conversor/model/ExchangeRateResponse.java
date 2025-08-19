@@ -11,7 +11,6 @@ public class ExchangeRateResponse {
     private String base_code;
     private ConversionRates conversion_rates;
 
-    // Getters e Setters
     public String getResult() { return result; }
     public void setResult(String result) { this.result = result; }
 
@@ -51,7 +50,6 @@ public class ExchangeRateResponse {
         private double BRL;
         private double ARS;
 
-        // Getters e Setters
         public double getUSD() { return USD; }
         public void setUSD(double USD) { this.USD = USD; }
 
@@ -82,4 +80,5 @@ public class ExchangeRateResponse {
         public double getARS() { return ARS; }
         public void setARS(double ARS) { this.ARS = ARS; }
     }
+
 }
