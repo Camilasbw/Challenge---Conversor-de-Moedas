@@ -34,7 +34,7 @@ public class Main {
 
             try {
                 opcao = scanner.nextInt();
-                scanner.nextLine(); // Limpar buffer
+                scanner.nextLine();
 
                 switch (opcao) {
                     case 1:
@@ -72,7 +72,7 @@ public class Main {
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Por favor, digite um número válido!");
-                scanner.nextLine(); // Limpar buffer
+                scanner.nextLine()
                 opcao = -1;
             } catch (Exception e) {
                 System.out.println("Erro: " + e.getMessage());
@@ -85,7 +85,7 @@ public class Main {
         try {
             System.out.print("Digite o valor a ser convertido: ");
             double valor = scanner.nextDouble();
-            scanner.nextLine(); // Limpar buffer
+            scanner.nextLine();
 
             double resultado = converter.convertCurrency(valor, de, para);
             System.out.printf("✅ %.2f %s = %.2f %s%n", valor, de, resultado, para);
@@ -107,7 +107,7 @@ public class Main {
 
             System.out.print("Digite o valor a ser convertido: ");
             double valor = scanner.nextDouble();
-            scanner.nextLine(); // Limpar buffer
+            scanner.nextLine();
 
             double resultado = converter.convertCurrency(valor, de, para);
             System.out.printf("✅ %.2f %s = %.2f %s%n", valor, de, resultado, para);
